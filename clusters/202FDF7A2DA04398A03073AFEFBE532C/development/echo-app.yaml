@@ -78,7 +78,7 @@ spec:
     - 52.188.77.165
     secretName: ihfdemo-tls
   rules:
-  - http:
+  - https:
       paths:
       - path: /(.*)
         pathType: Prefix
