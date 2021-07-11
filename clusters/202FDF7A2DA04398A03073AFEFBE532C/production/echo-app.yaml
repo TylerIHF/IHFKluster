@@ -32,7 +32,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: echo-app-internal
-  namespace: development
+  namespace: production
   labels:
     k8s-app: echo-app
   annotations:
