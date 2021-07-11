@@ -50,6 +50,10 @@ metadata:
     description: EchoApp
 spec:
   ports:
+    - port: 5001
+      targetPort: 5001
+    - port: 443
+      targetPort: 5001
     - port: 80
       targetPort: 5000
   selector:
@@ -78,4 +82,4 @@ spec:
           service:
             name: echo-app-internal
             port:
-              number: 80
+              number: 443
