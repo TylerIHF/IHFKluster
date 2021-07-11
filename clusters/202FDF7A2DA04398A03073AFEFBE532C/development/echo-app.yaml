@@ -61,3 +61,28 @@ spec:
       name: map-80-5000
   selector:
     k8s-app: echo-app
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: echo-app-external
+  namespace: development
+  labels:
+    k8s-app: echo-app
+  annotations:
+    description: EchoApp
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 5001
+      targetPort: 5001
+      name: map-5001-5001
+    - port: 443
+      targetPort: 5001
+      name: map-443-5001
+    - port: 80
+      targetPort: 5000
+      name: map-80-5000
+  selector:
+    k8s-app: echo-app
+
