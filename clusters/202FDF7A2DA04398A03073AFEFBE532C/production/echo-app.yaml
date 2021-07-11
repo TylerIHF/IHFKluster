@@ -56,7 +56,7 @@ metadata:
 spec:
   tls:
   - hosts:
-    - tylerihf.github.io
+    - 20.185.74.145
     secretName: ihfdemo-tls
   rules:
   - http:
