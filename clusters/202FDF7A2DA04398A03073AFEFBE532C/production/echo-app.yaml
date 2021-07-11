@@ -48,7 +48,7 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: echo-app-ingress
+  name: echo-app-ingress-production
   namespace: production
   annotations:
     kubernetes.io/ingress.class: nginx
