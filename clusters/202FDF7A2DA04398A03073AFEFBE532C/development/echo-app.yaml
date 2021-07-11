@@ -24,7 +24,7 @@ spec:
       containers:
       - name: echo-app
         image: >-
-          ba8d9c8fe1374d5bbf5913a537abc1b8.azurecr.io/echoapp:29c8f84e912e6d895104fb7f0618059105333ebb
+          ba8d9c8fe1374d5bbf5913a537abc1b8.azurecr.io/echoapp:56a6e8645af8f189896854157a78c86e8740114e
         env:
         - name: AzureAD__ClientId
           valueFrom:
