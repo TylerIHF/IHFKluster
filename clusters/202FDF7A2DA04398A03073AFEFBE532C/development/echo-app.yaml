@@ -36,6 +36,11 @@ spec:
             secretKeyRef:
               name: echoad-credentials
               key: AzureAD__TenantId
+        - name: ConnectionStrings__EchoDB
+          valueFrom:
+            secretKeyRef:
+              name: echodb-credentials
+              key: ConnectionStrings__EchoDB
       imagePullSecrets:
         - name: acr-secret-ba8d9c8fe-development
 ---
